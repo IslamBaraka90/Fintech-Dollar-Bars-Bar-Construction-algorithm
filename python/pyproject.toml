@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fintech-dollar-bars"
+version = "0.1.0"
+description = "Dollar Bars for market-data engineering — aggregate a trade tape into fixed-notional OHLCV bars using exact fixed-point math. Canonical cross-language reference implementation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "The Fintech Builder", email = "islam.baraka.90@gmail.com" }]
+keywords = [
+  "fintech", "dollar-bars", "bar-construction", "ohlcv", "market-data",
+  "market-data-engineering", "tick-data", "notional", "fixed-point",
+  "aggregation", "trading", "finance", "quant", "algorithm",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Financial and Insurance Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.urls]
+"Article" = "https://thefintechbuilder.com/market-data-engineering/bar-construction/dollar-bars/"
+"Homepage" = "https://thefintechbuilder.com"
+"Source" = "https://github.com/IslamBaraka90/Fintech-Dollar-Bars-Bar-Construction-algorithm"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fintech_dollar_bars"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
