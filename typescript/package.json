@@ -1,7 +1,7 @@
 {
   "name": "fintech-dollar-bars",
   "version": "0.1.0",
-  "description": "Dollar Bars for market-data engineering — aggregate a trade tape into fixed-notional OHLCV bars using exact fixed-point math. Canonical cross-language reference implementation.",
+  "description": "Dollar Bars for market-data engineering \u2014 aggregate a trade tape into fixed-notional OHLCV bars using exact fixed-point math. Canonical cross-language reference implementation.",
   "keywords": [
     "fintech",
     "dollar-bars",
@@ -48,6 +48,7 @@
     "example": "node --experimental-strip-types examples/quickstart.ts"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "typescript": "^5.7.0"
   }
 }

@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "fintech-dollar-bars"
 version = "0.1.0"
 description = "Dollar Bars for market-data engineering — aggregate a trade tape into fixed-notional OHLCV bars using exact fixed-point math. Canonical cross-language reference implementation."
-readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "The Fintech Builder", email = "islam.baraka.90@gmail.com" }]
